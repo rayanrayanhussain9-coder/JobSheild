@@ -1,0 +1,64 @@
+.particle-hero {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  min-height: calc(100vh - 62px);
+  min-height: calc(100svh - 62px);
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #fff;
+  color: #202126;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+.particle-field {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  pointer-events: none;
+}
+.particle-copy {
+  position: relative; z-index: 1;
+  width: 100%; max-width: 1200px;
+  box-sizing: border-box; padding: 36px 18px 76px;
+  text-align: center;
+}
+.particle-lockup {
+  display: flex; justify-content: center;
+  margin: 0 auto clamp(23px,3.3vh,39px);
+}
+.particle-lockup svg {width: 150px; height: auto; display:block}
+#particle-headline {
+  margin: 0;
+  font-family: inherit;
+  font-size: clamp(46px,5.35vw,88px);
+  font-weight: 440;
+  line-height: 1.015;
+  letter-spacing: -.058em;
+  text-wrap: balance;
+}
+.particle-line {display: block; overflow: hidden; padding: 0 0 .12em; margin: 0 0 -.12em}
+.particle-line > span {display: block}
+.particle-cta {
+  margin-top: clamp(24px,4.8vh,50px);
+  padding: 14px 28px; min-height: 48px;
+  font-family: inherit; font-size: 16px; font-weight: 600;
+  color: white; background: #29232f; border: 1px solid #29232f; border-radius: 99px;
+  cursor: pointer;
+}
+.particle-cta:hover {background: #483a65}
+.particle-cta:focus-visible {outline: 3px solid #7764b3;outline-offset: 5px}
+@keyframes js-particle-fade {from {opacity:0} to {opacity:1}}
+@media (prefers-reduced-motion:no-preference) {
+  .particle-hero:not([data-ready]) .particle-copy {opacity:0}
+  .particle-hero[data-intro] .particle-line > span > span {animation:js-particle-fade .14s ease-out var(--arrival) both}
+  .particle-hero[data-intro] .particle-cta {animation:js-particle-fade .4s ease-out .75s both}
+  .particle-hero[data-intro] .particle-lockup {animation:js-particle-fade .55s ease-out .24s both}
+  .particle-hero[data-intro] canvas {animation:js-particle-fade 1.1s ease-out both}
+  .particle-cta {transition:background-color .18s,box-shadow .18s}
+  .particle-cta:hover {box-shadow:0 4px 14px #33294c22}
+}
+@media (max-width:600px) {
+  #particle-headline {font-size:clamp(39px,9.5vw,55px);max-width:13em;margin-inline:auto}
+  .particle-lockup svg {width:118px}
+  .particle-line,.particle-line > span {display:inline;padding:0;margin:0}
+}

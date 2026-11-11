@@ -1,0 +1,33 @@
+{
+  "random_seed": 42,
+  "split_method": "StratifiedGroupKFold (Template-Aware Grouping)",
+  "train": {
+    "total_records": 12516,
+    "legitimate": 11910,
+    "fraudulent": 606,
+    "fraud_rate_pct": 4.84,
+    "unique_groups": 11058
+  },
+  "val": {
+    "total_records": 2682,
+    "legitimate": 2552,
+    "fraudulent": 130,
+    "fraud_rate_pct": 4.85,
+    "unique_groups": 2410
+  },
+  "test": {
+    "total_records": 2682,
+    "legitimate": 2552,
+    "fraudulent": 130,
+    "fraud_rate_pct": 4.85,
+    "unique_groups": 2411
+  },
+  "total_records": 17880,
+  "leakage_verification": {
+    "train_val_overlap_count": 0,
+    "train_test_overlap_count": 0,
+    "val_test_overlap_count": 0,
+    "is_leakage_free": true
+  },
+  "raw_file_sha256": "59253295129d8b6a27607f9904f7d4ddf4dbb0ee35e079c7eb51b58b5e62bf60"
+}

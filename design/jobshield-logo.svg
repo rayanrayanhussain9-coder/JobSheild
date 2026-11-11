@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="424" height="112" viewBox="0 0 424 112" role="img" aria-labelledby="title desc">
+  <title id="title">JobShield</title>
+  <desc id="desc">A folded job posting ending in a shield point, with a J cut out of its center, beside the JobShield wordmark.</desc>
+  <defs>
+    <linearGradient id="ink" x1="0" y1="1" x2="1" y2="0">
+      <stop stop-color="#473399"/><stop offset="1" stop-color="#6854ca"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(15 13)">
+    <path fill="url(#ink)" fill-rule="evenodd" d="M14 2H53L72 21V44C72 63 56 75 38 84C20 75 4 63 4 44V12Q4 2 14 2Z M28 27H49V45C49 56 43 62 33 62C26 62 20 58 17 52L24 47C26 51 29 54 33 54C38 54 40 51 40 45V35H28Z"/>
+    <path fill="#b9acfa" d="M53 2L72 21H59Q53 21 53 15Z"/>
+  </g>
+  <text x="104" y="76" fill="#201d29" font-family="Inter,Helvetica Neue,Arial,sans-serif" font-weight="700" font-size="64" letter-spacing="-3.4">JobShield</text>
+</svg>

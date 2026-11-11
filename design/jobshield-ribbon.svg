@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="142" viewBox="0 0 540 142" role="img" aria-labelledby="title">
+<title id="title">JobShield — folded ribbon monogram</title>
+<defs>
+  <linearGradient id="crown" x2=".9" y2="1"><stop stop-color="#a995ff"/><stop offset=".48" stop-color="#6950ec"/><stop offset="1" stop-color="#4a33b8"/></linearGradient>
+  <linearGradient id="silk" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#5b33ca"/><stop offset=".5" stop-color="#8461ee"/><stop offset="1" stop-color="#83c4ff"/></linearGradient>
+  <linearGradient id="tail" x2="1" y2=".5"><stop stop-color="#42319a"/><stop offset="1" stop-color="#7661ed"/></linearGradient>
+</defs>
+<g transform="translate(22 12)">
+  <!-- A swept S folds over the hook of the J. -->
+  <path fill="url(#crown)" d="M13 32 57 7Q61 5 65 7L103 27 85 39 61 27 33 43Z"/>
+  <path fill="#44319f" d="m13 32 20 11 51 27 19-12-58-31-12 7-7-4Z"/>
+  <path fill="url(#silk)" d="m13 32 90 26-18 15-60-24Z"/>
+  <path fill="url(#tail)" d="m103 58-1 22q-1 6-7 11l-33 24q-3 2-7 0L20 96 8 75l48 22 26-19 3-5Z"/>
+  <path fill="#b9a1ff" d="m8 75 16-8 34 16-2 14Z"/>
+  <path fill="#4834a8" d="m58 83 1-19 16 6-1 11-18 16Z"/>
+  <path fill="#b3dfff" d="m13 32 90 26-4 3Z" opacity=".65"/>
+</g>
+<text x="143" y="92" fill="#211a36" font-family="Avenir Next,Helvetica Neue,Arial,sans-serif" font-weight="650" font-size="72" letter-spacing="-4.3">Job<tspan font-weight="750">Shield</tspan></text>
+</svg>

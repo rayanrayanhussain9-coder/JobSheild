@@ -1,0 +1,124 @@
+<style>
+.js3d-stage {
+  position: relative;
+  container-type: inline-size;
+  width: 100%;
+  max-width: 680px;
+  margin: auto;
+  isolation: isolate;
+}
+.js3d-scene {
+  position: relative;
+  display: flow-root;
+  padding: 2% 0 3%;
+}
+.js3d-ground {
+  position: absolute;
+  left: 14%;
+  top: 0;
+  margin-top: 70%;
+  width: 54%;
+  height: 4%;
+  background: radial-gradient(ellipse at center, rgba(50,36,105,.23), transparent 71%);
+  filter: blur(5px);
+}
+.js3d-orb {
+  position: relative;
+  display: block;
+  width: 72%;
+  margin: 0 0 0 5%;
+  height: auto;
+  user-select: none;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  pointer-events: none;
+  translate: 0 var(--globe-rise, 0px);
+}
+.js3d-orb img,.js3d-orb canvas {position:absolute;inset:0;width:100%;height:100%;display:block}
+.js3d-orb canvas,.js3d-orb.rendered img,.js3d-orb.ring-view canvas {display:none}
+.js3d-orb.rendered canvas {display:block}
+.js3d-rings {display:none;position:absolute;inset:6%;transform-style:preserve-3d}
+.ring-view .js3d-rings {display:block}
+.js3d-rings i {position:absolute;inset:0;border:clamp(4px,1.5cqw,9px) solid #7864d9;border-color:#7360d0 #6eaae8 #5140a6 #7566cb;border-radius:50%}
+.js3d-dossier {
+  position: relative;
+  box-sizing: border-box;
+  width: max-content;
+  max-width: 85%;
+  margin: 1% 4% 0 auto;
+  padding: 2.3% 3% 2.7%;
+  color: #242036;
+  background: linear-gradient(139deg,#fff 0%,#fffeff 62%,#ecebf4 100%);
+  border: 1px solid #d7d5e0;
+  border-radius: clamp(7px,1.7cqw,12px);
+  box-shadow: 1px 1px 0 #f7f6fb,2px 3px 0 #bfc0d2,2px 4px 0 #a4a2bd,
+    0 14px 18px -9px rgba(31,23,64,.32),0 27px 40px -17px rgba(44,33,81,.31);
+  transform: perspective(800px) rotateY(-14deg) rotateX(7deg) rotateZ(-3deg);
+  transform-origin: 50% 66%;
+  translate: 0 var(--dossier-rise, 0px);
+  font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height: 1.2;
+}
+.js3d-meta {
+  display: flex; align-items: center; gap: 2%;
+  margin-bottom: .55em;
+  font: 650 clamp(8px,1.65cqw,11px)/1.2 ui-monospace,monospace;
+  letter-spacing: .105em;
+  color: #5b5670;
+}
+.js3d-file {
+  display: inline-block;
+  width: 1em; height: 1.2em;
+  border: 1.2px solid #645991;
+  border-radius: 2px;
+  background: linear-gradient(to bottom, transparent 43%,#9389ae 43% 53%, transparent 53% 65%,#9389ae 65% 75%, transparent 75%) center/55% 100% no-repeat;
+}
+.js3d-ref {margin-left:auto;color:#736f83}
+.js3d-title {
+  font-weight: 680;
+  font-size: clamp(14px,3.55cqw,25px);
+  letter-spacing: -.045em;
+  line-height: 1.12;
+  max-width: 13em;
+}
+.js3d-excerpt {
+  margin-top: .5em;
+  border-top: 1px solid #e2e1e9;
+  padding-top: .5em;
+  display: flex;
+  align-items: center;
+  gap: .45em;
+  color: #4d3612;
+  font-weight: 600;
+  font-size: clamp(10px,2.5cqw,17px);
+}
+.js3d-excerpt mark {
+  padding: .14em .34em .2em;
+  line-height: 1.2;
+  color: inherit;
+  background: #ffe3a2;
+  box-shadow: inset 0 -1px 0 #dfb65c;
+  border-radius: 2px;
+}
+.js3d-warning {
+  display: inline-grid; place-items: center;
+  color: #7a551c; width: 1.1em; height: 1.1em;
+  font-size: .8em; line-height: 1; font-weight: 750;
+  border: 1.2px solid currentColor;
+  border-radius: 50%;
+}
+</style>
+<div class="js3d-stage">
+  <div class="js3d-scene">
+    <div class="js3d-ground"></div>
+    <div class="js3d-orb" role="img" aria-label="Sculpted blue and violet globe">
+      <img src="__GLOBE_URL__" alt="" draggable="false">
+      <canvas aria-hidden="true"></canvas><span class="js3d-rings" aria-hidden="true"></span>
+    </div>
+    <div class="js3d-dossier">
+      <div class="js3d-meta"><span class="js3d-file"></span> SAMPLE POSTING <span class="js3d-ref">№ 01</span></div>
+      <div class="js3d-title">Remote Data Entry Assistant</div>
+      <div class="js3d-excerpt"><span class="js3d-warning">!</span><mark>$120 registration fee</mark></div>
+    </div>
+  </div>
+</div>

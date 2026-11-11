@@ -1,0 +1,43 @@
+<style>
+.js-home-end {background:#fff;color:#201d26;font-family:system-ui,sans-serif}
+.js-home-end .js-faq {border-top:1px solid #dcdbe2;padding:clamp(40px,6vw,78px) 0;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,5vw,80px)}
+.js-home-end .js-foot-label {font:650 11px/1.3 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#655888;margin:0 0 18px}
+.js-home-end h2 {font:400 clamp(34px,4vw,58px)/1.06 Georgia,serif;letter-spacing:-.045em;padding:0;margin:0;max-width:12ch;color:#201d26}
+.js-home-end details {border-bottom:1px solid #dad8e0;padding:0 2px}
+.js-home-end details:first-child {border-top:1px solid #dad8e0}
+.js-home-end summary {display:flex;align-items:center;justify-content:space-between;gap:12px;list-style:none;cursor:pointer;padding:18px 0;color:#27232f;font-size:16px;font-weight:600}
+.js-home-end summary::-webkit-details-marker {display:none}
+.js-home-end summary::after {content:"+";font:400 21px/1 system-ui;color:#5944a6}
+.js-home-end details[open] summary::after {content:"−"}
+.js-home-end details p {color:#514e5b;font-size:15px;line-height:1.6;margin:0 0 20px}
+.js-home-end footer {border-top:1px solid #dcdbe2;padding:38px 0 22px;display:grid;grid-template-columns:1.35fr 1fr 1fr 1fr;gap:24px}
+.js-home-end footer h3 {font-size:14px;font-weight:650;padding:0;margin:0 0 12px}
+.js-home-end footer p,.js-home-end footer a,.js-home-end footer li {font-size:14px;line-height:1.55}
+.js-home-end footer p {color:#625d6c;margin:0;max-width:26ch}
+.js-home-end footer ul {list-style:none;padding:0;margin:0}
+.js-home-end footer li {margin:0 0 6px;padding:0;color:#625d6c}
+.js-home-end a {color:#514199;text-decoration:underline;text-underline-offset:3px}
+.js-home-end a:focus-visible,.js-home-end summary:focus-visible {outline:2px solid #5943a4;outline-offset:3px;border-radius:2px}
+.js-home-end .js-foot-brand {font-size:19px;letter-spacing:-.045em}
+.js-home-end .js-foot-brand span {color:#5346b5}
+.js-home-end .js-foot-base {border-top:1px solid #e3e2e7;color:#625d6c;font-size:12px;padding-top:16px}
+@media (max-width:760px) {.js-home-end .js-faq {grid-template-columns:1fr}.js-home-end h2 {max-width:none}.js-home-end footer {grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<div class="js-home-end">
+  <section class="js-faq" aria-labelledby="js-faq-heading">
+    <div><p class="js-foot-label">Help center</p><h2 id="js-faq-heading">Frequently asked questions</h2></div>
+    <div>
+      <details><summary>What should I paste into the checker?</summary><p>Paste the job description and the instructions for applying. Include any requests from the recruiter about payments, equipment, or documents. You can add the title, requirements, and benefits separately.</p></details>
+      <details><summary>What does a green tick tell me?</summary><p>The classifier found low-risk wording and no warning rule triggered. To verify the opening, look for the role on the employer’s own careers page or contact the employer directly.</p></details>
+      <details><summary>Why was this ad flagged?</summary><p>A warning can come from a suspicious language pattern or a specific request, such as an upfront fee. Open the screening result to inspect the matched text and the words that influenced the classifier.</p></details>
+      <details><summary>How can I keep a screening result?</summary><p>Reopen the ad in your session’s history and download its HTML report for reading or its JSON report for analysis. Refreshing the page starts a new session.</p></details>
+    </div>
+  </section>
+  <footer aria-label="JobShield footer">
+    <div><h3 class="js-foot-brand"><span aria-hidden="true">◈</span> JobShield</h3><p>Job advertisement screening for applicants.</p></div>
+    <nav aria-label="Explore Home"><h3>Explore</h3><ul><li><a href="#js-faq-heading" target="_self">FAQs</a></li><li><a href="#js-contact-heading" target="_self">Contact us</a></li></ul></nav>
+    <div><h3 id="js-contact-heading">Contact us</h3><p>Contact details will appear here.</p></div>
+    <div><h3>Social</h3><ul><li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li></ul></div>
+  </footer>
+  <p class="js-foot-base">JobShield · AI Applications Lab</p>
+</div>

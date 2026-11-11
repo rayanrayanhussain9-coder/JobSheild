@@ -1,0 +1,39 @@
+{
+  "model_version": "1.0.0",
+  "model_type": "CalibratedClassifierCV",
+  "pipeline_name": "tfidf_linearsvc_calibrated",
+  "selected_at_utc": "2026-10-22T11:57:45.665742+00:00",
+  "random_seed": 42,
+  "raw_data_sha256": "59253295129d8b6a27607f9904f7d4ddf4dbb0ee35e079c7eb51b58b5e62bf60",
+  "decision_threshold": 0.38,
+  "feature_count": 25000,
+  "vocabulary_size": 25000,
+  "ngram_range": [
+    1,
+    2
+  ],
+  "split_summary": {
+    "train_samples": 12516,
+    "val_samples": 2682,
+    "test_samples": 2682
+  },
+  "classifier_hyperparameters": {
+    "cv": 3,
+    "ensemble": "auto",
+    "estimator__C": 1.0,
+    "estimator__class_weight": null,
+    "estimator__dual": "auto",
+    "estimator__fit_intercept": true,
+    "estimator__intercept_scaling": 1,
+    "estimator__loss": "squared_hinge",
+    "estimator__max_iter": 2000,
+    "estimator__multi_class": "ovr",
+    "estimator__penalty": "l2",
+    "estimator__random_state": 42,
+    "estimator__tol": 0.0001,
+    "estimator__verbose": 0,
+    "estimator": "LinearSVC(max_iter=2000, random_state=42)",
+    "method": "sigmoid",
+    "n_jobs": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "binned_true_probabilities": [
+    0.0063,
+    0.2667,
+    0.1333,
+    0.625,
+    0.8333,
+    0.6842,
+    1.0,
+    0.9853
+  ],
+  "binned_mean_predicted_probabilities": [
+    0.0091,
+    0.1663,
+    0.3323,
+    0.4186,
+    0.5461,
+    0.6928,
+    0.8089,
+    0.9791
+  ],
+  "interpretation": "Points close to the diagonal y=x indicate that predicted scores accurately match the empirical rate of fraudulent postings in historical data."
+}

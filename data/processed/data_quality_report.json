@@ -1,0 +1,113 @@
+{
+  "dataset_name": "EMSCAD (Employment Scam Aegean Dataset)",
+  "total_records": 17880,
+  "total_columns": 18,
+  "columns": [
+    "job_id",
+    "title",
+    "location",
+    "department",
+    "salary_range",
+    "company_profile",
+    "description",
+    "requirements",
+    "benefits",
+    "telecommuting",
+    "has_company_logo",
+    "has_questions",
+    "employment_type",
+    "required_experience",
+    "required_education",
+    "industry",
+    "function",
+    "fraudulent"
+  ],
+  "target_column": "fraudulent",
+  "class_distribution": {
+    "legitimate_count": 17014,
+    "fraudulent_count": 866,
+    "legitimate_pct": 95.16,
+    "fraudulent_pct": 4.84
+  },
+  "missing_values": {
+    "job_id": {
+      "count": 0,
+      "pct": 0.0
+    },
+    "title": {
+      "count": 0,
+      "pct": 0.0
+    },
+    "location": {
+      "count": 346,
+      "pct": 1.94
+    },
+    "department": {
+      "count": 11547,
+      "pct": 64.58
+    },
+    "salary_range": {
+      "count": 15012,
+      "pct": 83.96
+    },
+    "company_profile": {
+      "count": 3308,
+      "pct": 18.5
+    },
+    "description": {
+      "count": 1,
+      "pct": 0.01
+    },
+    "requirements": {
+      "count": 2696,
+      "pct": 15.08
+    },
+    "benefits": {
+      "count": 7212,
+      "pct": 40.34
+    },
+    "telecommuting": {
+      "count": 0,
+      "pct": 0.0
+    },
+    "has_company_logo": {
+      "count": 0,
+      "pct": 0.0
+    },
+    "has_questions": {
+      "count": 0,
+      "pct": 0.0
+    },
+    "employment_type": {
+      "count": 3471,
+      "pct": 19.41
+    },
+    "required_experience": {
+      "count": 7050,
+      "pct": 39.43
+    },
+    "required_education": {
+      "count": 8105,
+      "pct": 45.33
+    },
+    "industry": {
+      "count": 4903,
+      "pct": 27.42
+    },
+    "function": {
+      "count": 6455,
+      "pct": 36.1
+    },
+    "fraudulent": {
+      "count": 0,
+      "pct": 0.0
+    }
+  },
+  "duplicate_analysis": {
+    "unique_text_templates": 15879,
+    "duplicate_records_detected": 2001,
+    "conflicting_label_groups": 0,
+    "grouping_strategy": "Normalized SHA-256 text template hash to prevent cross-partition leakage"
+  },
+  "raw_file_sha256": "59253295129d8b6a27607f9904f7d4ddf4dbb0ee35e079c7eb51b58b5e62bf60"
+}
